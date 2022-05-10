@@ -16,6 +16,13 @@ ul{
     position: relative;
 }
 
+.slider{
+    position: fixed;
+    z-index: -1;
+}
+
+/*HEADER*/
+
 .header-wrapper{
     width: 100%;
     display: flex;
@@ -54,6 +61,8 @@ ul{
     min-width: 600px;
     font-size: 0.75rem;
 }
+
+/*NAVBAR*/
 
 .navbar{
     flex: 1;
@@ -100,6 +109,8 @@ ul{
 .navbar-items--active{
     color: white;
 }
+
+/*SUBNAV*/
 
 .subnav{
     list-style: none;
@@ -269,6 +280,7 @@ ul{
 .desc__img{
     filter: brightness(0.3);
     width: 100%;
+    height: 100%;
 }
 
 .desc__heading{
@@ -297,6 +309,8 @@ ul{
     font-weight: lighter;
 }
 
+/*BUTTON*/
+
 .btn{
     background: none;
     outline: none;
@@ -305,18 +319,117 @@ ul{
     cursor: pointer;
 }
 
+.btn--transparent{
+    border: 1px solid white;
+    color: white;
+}
+
 .btn:hover{
     border: 1px solid #2d66f7 ;
     background-color: #2d66f7 ;
     transition: all 0.2s ease-in-out;
 }
 
-.btn--transparent{
-    border: 1px solid white;
+.btn--white{
+    border: 1px solid #666;
+    color: #666;
+}
+
+.btn--white:hover{
     color: white;
 }
 
 .btn--black{
-    border: 1px solid black;
-    color: black;
+    border: 1px solid #a9a9a9;
+    color: #d6d6d6;
+}
+
+/*FEATURE SECTION*/
+.feature-section{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 110px 62px;
+    width: 100%;
+}
+
+.feature1{
+    top: 583px;
+}
+
+.feature2{
+    top: 1204px;
+}
+
+.feature3{
+    top: 1755px;
+}
+
+.white {
+    background-color: white;
+}
+
+.black{
+    background-color: #232323;
+}
+
+.feature-content{
+    max-width: 480px;
+    min-width: 400px;
+    padding: 0 15px;
+}
+
+.feature-content__heading{
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.black .feature-content__heading{
+    color: white;
+}
+
+.feature-content__font{
+    font-family: 'Playfair Display', serif;
+
+}
+
+.feature-content__summary{
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+    font-size: 1.25rem;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+
+.white .feature-content__summary{
+    color: #666;
+}
+
+.black .feature-content__summary{
+    color: #a9a9a9;
+}
+
+.feature-content__description{
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.7;
+}
+
+.white .feature-content__description{
+    color: #666;
+}
+
+.black .feature-content__description{
+    color: #a9a9a9;
+}
+
+.feature-content__wrapper{
+
+}
+
+.feature-img{
+    width: 500px;
+    padding: 0 15px;
 }
