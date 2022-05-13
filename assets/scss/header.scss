@@ -1,9 +1,19 @@
 /*HEADER*/
+.header--hide{
+  transform: translateY(-100%);
+  opacity: 0;
+}
 
-.header-wrapper{
+.header-wrapper {
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
+  position: fixed;
+  z-index: 1;
+  background: #1f1f1f;
+  transition: all 0.3s linear;
+  opacity: 1;
 }
 
 .header{
@@ -12,15 +22,13 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 62px;
-  position: fixed;
-  z-index: 1;
 }
 
 .header__logo{
   width: 125px;
-  height: 80px;
+  height: 52px;
   text-align: center;
-  line-height: 80px;
+  line-height: 52px;
   text-decoration: none;
   color: white;
   font-size: 1.7rem;
@@ -75,7 +83,6 @@
 .navbar-items:hover > .subnav{
   display: block;
   opacity: 1;
-  transition: opacity 0.5s ease-in-out;
 }
 
 .navbar-items:hover > .subnav--padding{
@@ -90,6 +97,7 @@
 /*SUBNAV*/
 
 .subnav{
+  display: none;
   list-style: none;
   opacity: 0;
   position: absolute;
@@ -97,7 +105,7 @@
   top: 34px;
   left: -12px;
   min-width: 180px;
-  display: none;
+  transition: all 0.3s ease;
 }
 
 .subnav-items{
@@ -109,12 +117,12 @@
   font-weight: lighter;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.4s ease-out;
 }
 
 .subnav-items:hover{
   color: white;
   background-color: #000;
-  transition: all 0.4s ease-out;
 }
 
 .subnav--padding{

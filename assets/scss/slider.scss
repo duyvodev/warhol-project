@@ -13,6 +13,10 @@
   width: 100%;
   transform: translateY(-50%);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .desc__img{
@@ -32,10 +36,10 @@
 }
 
 .desc__heading::before {
-  content: 'v.1.0.1';
+  content: "v.1.0.1";
   position: absolute;
-  top: -24px;
-  right: 31%;
+  top: -19px;
+  right: -77px;
   color: #999;
   font-size: 1.6rem;
   text-transform: lowercase;
