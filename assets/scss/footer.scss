@@ -1,0 +1,140 @@
+
+/*Footer*/
+.footer-section{
+  background-color: #232323;
+  padding: 85px 100px;
+}
+
+.footer-content{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 30px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #333;
+  grid-gap: 30px;
+}
+
+.footer-content__items{
+  color: #999;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-content__heading{
+  font-size: 0.9rem;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.footer-content__words{
+  color: #999;
+  font-size: 0.8rem;
+  line-height: 2;
+}
+
+.footer-content__links{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.footer-content__links-items{
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 6px;
+  cursor: pointer;
+
+  &:hover{
+    color: #fff;
+    .footer-content__links-items-name{
+      color: #fff;
+    }
+  }
+}
+
+.footer-content__links-items-name{
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.footer-content__links-items-time{
+  font-size: 0.6rem;
+  font-weight: bold;
+  transition: all 0.1s ease-in-out;
+}
+
+.footer-content__email{
+  background-color: transparent;
+  padding: 13px 0;
+  margin-bottom: 20px;
+  outline: none;
+  border-width: 0 0 1px 0;
+  letter-spacing: 1px;
+  color: #999;
+  font-size: 0.8rem;
+  transition: all 0.2s linear;
+
+  &:focus{
+    border-color: white;
+    color: white;
+
+    &::placeholder{
+      color: white;
+    }
+  }
+}
+
+.footer-content__warning{
+  font-size: 0.6rem;
+  color: #666;
+  margin-left: 8px;
+  margin-top: 6px;
+}
+
+.footer-contact{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.footer-contact__left{
+  color: #999;
+  font-size: 0.7rem;
+  line-height: 2;
+}
+
+.footer-contact__words{
+  color: #999;
+  font-size: 0.8rem;
+  line-height: 2;
+}
+
+.footer-contact__links{
+  cursor: pointer;
+  transition: all 0.2s ease;
+  &:hover{
+    color: white;
+  }
+}
+
+.footer-contact__right{
+
+}
+
+.footer-contact__icons{
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: all 0.2s ease;
+  &:hover{
+    color: white;
+  }
+}
