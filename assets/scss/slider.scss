@@ -1,5 +1,5 @@
 //SLIDER
-.slider{
+.slider {
   position: fixed;
   z-index: -1;
   height: var(--slider-section-height);
@@ -19,15 +19,15 @@
   align-items: center;
 }
 
-.desc__img{
+.desc__img {
   filter: brightness(0.3);
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.desc__heading{
-  font-family: 'Playfair Display', serif;
+.desc__heading {
+  font-family: "Playfair Display", serif;
   font-size: 5rem;
   text-transform: capitalize;
   color: white;
@@ -45,9 +45,42 @@
   text-transform: lowercase;
 }
 
-.desc__words{
+.desc__words {
   color: white;
   margin: 4px 0 36px;
   font-size: 1.3rem;
   font-weight: lighter;
+}
+
+@media (max-width: 968px) {
+  .slider {
+    height: 64vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider {
+    height: 500px;
+  }
+
+  .desc__heading {
+    font-size: 2.6rem;
+
+    &::before {
+      content: "v.1.0.1";
+      position: absolute;
+      top: unset;
+      bottom: 5px;
+      right: -66px;
+      color: #999;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-transform: lowercase;
+    }
+  }
+
+  .desc__words {
+    font-size: 1.1rem;
+    margin: 14px 0 26px;
+  }
 }
