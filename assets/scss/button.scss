@@ -1,6 +1,6 @@
 /*BUTTON*/
 
-.btn{
+.btn {
   background: none;
   outline: none;
   padding: 14px 28px;
@@ -9,7 +9,7 @@
   transition: all 0.2s ease-in-out;
 }
 
-.btn--transparent{
+.btn--transparent {
   border: 1px solid white;
   color: white;
 }
@@ -17,26 +17,26 @@
 .btn--white:hover,
 .btn--black:hover,
 .btn--transparent:hover,
-.footer-content__btn:hover{
-  border: 1px solid #2d66f7 ;
-  background-color: #2d66f7 ;
+.footer-content__btn:hover {
+  border: 1px solid #2d66f7;
+  background-color: #2d66f7;
 }
 
-.btn--white{
+.btn--white {
   border: 1px solid #666;
   color: #666;
 }
 
-.btn--white:hover{
+.btn--white:hover {
   color: white;
 }
 
-.btn--black{
+.btn--black {
   border: 1px solid #a9a9a9;
   color: #d6d6d6;
 }
 
-.btn--blue{
+.btn--blue {
   color: white;
   background-color: #2d66f7;
   border: 1px solid #2d66f7;
@@ -47,15 +47,14 @@
   color: #2d66f7;
 }
 
-.btn--center{
+.btn--center {
   margin-top: 100px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
 
-
-.btn.cart-footer__btn{
+.btn.cart-footer__btn {
   padding: 10px 15px;
   color: white;
   font-size: 0.7rem;
@@ -63,17 +62,15 @@
   border: none;
 }
 
-.btn.cart-footer__btn:hover{
+.btn.cart-footer__btn:hover {
   background-color: #999;
   transition: all 0.4s linear;
 }
 
-.cart-footer__btn-words{
-
+.cart-footer__btn-words {
 }
 
-
-.footer-content__btn{
+.footer-content__btn {
   color: #fff;
   border: 1px solid #333;
   background: #333;
@@ -81,4 +78,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+// SCROLL TO TOP BUTTON
+.goToTop-section {
+  display: flex;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  background: rgb(65, 65, 65);
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    background: #120d0d;
+  }
+}
+
+.goToTop-icon {
+  color: white;
+  margin: auto;
+}
+
+.goToTop--hide {
+  display: none;
 }

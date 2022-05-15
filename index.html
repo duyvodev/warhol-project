@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/search.css">
     <link rel="stylesheet" href="./assets/css/button.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/aa81db3404.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="top">
         <!--        HEADER START-->
         <div class="header-wrapper">
             <header class="header">
@@ -273,6 +274,34 @@
                 </div>
             </header>
         </div>
+        <!-- MOBILE NAVBAR -->
+        <div class="navbar--mobile">
+            <nav class="navbar__list--mobile">
+                <li class="navbar__items--mobile">
+                    <a href="#" class="navbar__items-links--mobile">demos</a>
+                </li>
+                <li class="navbar__items--mobile">
+                    <a href="#" class="navbar__items-links--mobile">pages</a>
+                </li>
+                <li class="navbar__items--mobile">
+                    <a href="#" class="navbar__items-links--mobile">folio</a>
+                </li>
+                <li class="navbar__items--mobile">
+                    <a href="#" class="navbar__items-links--mobile">blog</a>
+                </li>
+                <li class="navbar__items--mobile">
+                    <a href="#" class="navbar__items-links--mobile">shop</a>
+                </li>
+                <li class="navbar__items--mobile">
+                    <a href="#" class="navbar__items-links--mobile">elements</a>
+                </li>
+                <li class="navbar__items--mobile">
+                    <a href="#" class="navbar__items-links--mobile">your cart</a>
+                </li>
+                <div class="navbar__close-btn--mobile">&times;</div>
+            </nav>
+        </div>
+        <!-- MOBILE NAVBAR END -->
         <!--        HEADER END-->
         <!--        CONTENT START-->
         <div class="content">
@@ -594,12 +623,19 @@
             <!--        BODY END-->
         </div>
         <!--        CONTENT END-->
+        <!-- SEARCH SECTION -->
         <div class="search-section">
             <input type="text" class="search-section__input " placeholder="TYPE & HIT ENTER...">
             <p class="search-section__close">
                 close
             </p>
         </div>
+        <!-- SEARCH SECTION END-->
+        <!-- SCROLL TO TOP BUTTON -->
+        <a href="#top" class="goToTop-section">
+            <i class="goToTop-icon fa-solid fa-angle-up"></i>
+        </a>
+        <!-- SCROLL TO TOP BUTTON END -->
     </div>
     <script src="./assets/js/index.js"></script>
 </body>
