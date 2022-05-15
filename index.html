@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/slider.css">
     <link rel="stylesheet" href="./assets/css/features.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/search.css">
     <link rel="stylesheet" href="./assets/css/button.css">
     <script src="https://kit.fontawesome.com/aa81db3404.js" crossorigin="anonymous"></script>
 </head>
@@ -262,7 +263,7 @@
                         </div>
                     </div>
 
-                    <div class="search">
+                    <div class="search" id="searchBtn">
                         <i class="search-icon fa-solid fa-magnifying-glass"></i>
                     </div>
 
@@ -574,7 +575,7 @@
                     </div>
                     <div class="footer-contact">
                         <div class="footer-contact__left">
-                            <span>© ThemeMountain. All Rights Reserved. </span>
+                            <span class="footer-contact__left-words">© ThemeMountain. All Rights Reserved. </span>
                             <span class="footer-contact__links"> Terms & Conditions </span>
                             |
                             <span class="footer-contact__links">Cookies policy</span>
@@ -593,6 +594,12 @@
             <!--        BODY END-->
         </div>
         <!--        CONTENT END-->
+        <div class="search-section">
+            <input type="text" class="search-section__input " placeholder="TYPE & HIT ENTER...">
+            <p class="search-section__close">
+                close
+            </p>
+        </div>
     </div>
     <script src="./assets/js/index.js"></script>
 </body>

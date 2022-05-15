@@ -2,6 +2,10 @@
 // let content = document.querySelector(".content")
 // let footer = document.querySelector(".footer-section")
 let header = document.querySelector(".header-wrapper")
+let searchBtn = document.getElementById("searchBtn")
+let searchSection = document.querySelector(".search-section")
+let searchCloseBtn = document.querySelector(".search-section__close")
+let searchInput = document.querySelector(".search-section__input")
 //
 // window.onwheel = e => {
 //     if(e.deltaY >= 0){
@@ -16,11 +20,20 @@ let header = document.querySelector(".header-wrapper")
 
 
 window.onwheel = e => {
-    if(e.deltaY >= 0){
+    if (e.deltaY >= 0) {
         // Scrolling Down with mouse
         header.classList.add("header--hide")
     } else {
         // Scrolling Up with mouse
         header.classList.remove("header--hide")
     }
+}
+
+searchBtn.onclick = () => {
+    searchSection.classList.add("search-section--display")
+}
+
+searchCloseBtn.onclick = () => {
+    searchSection.classList.remove("search-section--display")
+    searchInput.value = ""
 }
