@@ -14,6 +14,10 @@
   color: white;
 }
 
+.btn.btn--transparent.btn--opa0{
+  opacity: 0;
+}
+
 .btn--white:hover,
 .btn--black:hover,
 .btn--transparent:hover,
@@ -92,6 +96,7 @@
   cursor: pointer;
   border-radius: 50%;
   transition: all 0.2s ease-in;
+  text-decoration: none;
 
   &:hover {
     background: #120d0d;

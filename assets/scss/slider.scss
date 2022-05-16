@@ -33,6 +33,7 @@
   color: white;
   font-weight: 400;
   position: relative;
+  opacity: 0;
 }
 
 .desc__heading::before {
@@ -50,17 +51,26 @@
   margin: 4px 0 36px;
   font-size: 1.3rem;
   font-weight: lighter;
+  opacity: 0;
 }
 
 @media (max-width: 968px) {
   .slider {
-    height: 64vw;
+    height: 600px;
+  }
+
+  .body{
+    top: 600px;
   }
 }
 
 @media (max-width: 768px) {
   .slider {
     height: 500px;
+  }
+  
+  .body{
+    top: 500px;
   }
 
   .desc__heading {

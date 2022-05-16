@@ -1,17 +1,18 @@
-// let slider = document.querySelector(".slider")
-// let content = document.querySelector(".content")
-// let footer = document.querySelector(".footer-section")
-let header = document.querySelector(".header-wrapper")
-let searchBtn = document.getElementById("searchBtn")
-let searchSection = document.querySelector(".search-section")
-let searchCloseBtn = document.querySelector(".search-section__close")
-let searchInput = document.querySelector(".search-section__input")
-let goToTopBtn = document.querySelector(".goToTop-section")
-let menuMobileBtn = document.querySelector(".mobile-menu")
-let menuMobileOverlay = document.querySelector(".navbar--mobile")
-let menuMobileList = document.querySelector(".navbar__list--mobile")
-let menuMobileClose = document.querySelector(".navbar__close-btn--mobile")
-
+const slider = document.querySelector(".slider")
+// const content = document.querySelector(".content")
+// const footer = document.querySelector(".footer-section")
+const header = document.querySelector(".header-wrapper")
+const searchBtn = document.getElementById("searchBtn")
+const searchSection = document.querySelector(".search-section")
+const searchCloseBtn = document.querySelector(".search-section__close")
+const searchInput = document.querySelector(".search-section__input")
+const goToTopBtn = document.querySelector(".goToTop-section")
+const menuMobile = document.querySelector(".navbar--mobile")
+const menuMobileBtn = document.querySelector(".mobile-menu")
+const menuMobileOverlay = document.querySelector(".navbar__overlay--mobile")
+const menuMobileList = document.querySelector(".navbar__list--mobile")
+const menuMobileClose = document.querySelector(".navbar__close-btn--mobile")
+const loader = document.querySelector(".loader")
 
 //
 // window.onwheel = e => {
@@ -70,10 +71,42 @@ searchCloseBtn.onclick = () => {
 
 menuMobileBtn.onclick = () => {
     // Display NAVBAR MOBILE
-    menuMobileOverlay.classList.add("navbar--mobile--display")
-    menuMobileList.classList.add("navbar__list--mobile--slideIn")
+    menuMobile.classList.add("navbar--mobile_popUp")
+    menuMobileOverlay.classList.add("navbar__overlay--mobile_display")
+    menuMobileList.classList.add("navbar__list--mobile--display")
 }
 
 menuMobileClose.onclick = () => {
-    menuMobileOverlay.classList.remove("navbar--mobile--display")
+    menuMobileList.classList.remove("navbar__list--mobile--display")
+    setTimeout(()=>{
+        menuMobileOverlay.classList.remove("navbar__overlay--mobile_display")
+    },300)
+    setTimeout(() => {
+        menuMobile.classList.remove("navbar--mobile_popUp")
+    }, 500);
 }
+
+// Display loader in 3s
+window.onload = () => {
+    setTimeout(() => {
+        loader.classList.add("loader--fadeOut")
+    } ,2500)
+    setTimeout(() => {
+        loader.classList.add("loader--hide")
+    } ,3000)
+}
+
+// ADD ANIMATION TO SLIDER SECTION
+const observerSlider = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            setTimeout(() => {
+                document.querySelector(".desc__heading").classList.add("fadeFromTop")
+                document.querySelector(".desc__words").classList.add("fadeFromBottom")
+                document.querySelector(".btn.btn--transparent").classList.add("fadeScaleSmall")
+            }, 3000)
+        }
+    })
+})
+
+observerSlider.observe(slider)

@@ -27,17 +27,17 @@
     font-weight: 700;
     line-height: 3.5rem;
     text-transform: uppercase;
-    opacity: 1;
-    transition: all 0.5s ease-out 1s;
-}
-
-.search-section__input::placeholder {
-    text-align: center;
-    font-size: 3.5rem;
-    color: black;
-    letter-spacing: 4px;
-    font-weight: 700;
-    line-height: 3.5rem;
+    
+    &::placeholder {
+        text-align: center;
+        font-size: 3.5rem;
+        color: black;
+        letter-spacing: 4px;
+        font-weight: 700;
+        line-height: 3.5rem;
+        opacity: 0;
+        transition: all 1.5s ease;
+    }
 }
 
 .search-section__close {
@@ -45,11 +45,23 @@
     cursor: pointer;
     font-size: 1rem;
     color: #000;
+    opacity: 0;
+    transition: all 1.5s linear;
 }
 
 .search-section--display {
     opacity: 1;
     z-index: 2;
+}
+
+.search-section.search-section--display{
+    & > .search-section__input::placeholder{
+        opacity: 1;
+    }
+
+    & > .search-section__close{
+        opacity: 1;
+    }
 }
 
 @media (max-width: 1050px) and (min-width: 769px) {
