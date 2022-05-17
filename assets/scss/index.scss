@@ -39,6 +39,10 @@ html{
   overflow: hidden;
 }
 
+.body--gap{
+  width: 100%;
+}
+
 .fadeFromTop{
   animation: fadeFromTop 1s cubic-bezier(0.43, 0, 0.09, 0.97) forwards;
 }
@@ -46,10 +50,6 @@ html{
 .fadeFromBottom{
   animation: fadeFromBottom 1s ease-in-out forwards;
 }
-
-// .fadeFromRight{
-//   animation: fadeFromRight 1s ease-in-out forwards;
-// }
 
 .fadeScaleSmall{
   animation: fadeScaleSmall 1s cubic-bezier(0.6, -0.28, 0.74, 0.05) forwards;

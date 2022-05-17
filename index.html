@@ -1,657 +1,781 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Warhol - Creative Multipurpose</title>
-    <link rel="stylesheet" href="./assets/css/index.css">
-    <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/slider.css">
-    <link rel="stylesheet" href="./assets/css/features.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
-    <link rel="stylesheet" href="./assets/css/search.css">
-    <link rel="stylesheet" href="./assets/css/button.css">
-    <link rel="stylesheet" href="./assets/css/preview.css">
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/slider.css" />
+    <link rel="stylesheet" href="./assets/css/features.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/search.css" />
+    <link rel="stylesheet" href="./assets/css/button.css" />
+    <link rel="stylesheet" href="./assets/css/preview.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="shortcut icon"
-        href="https://logoeps.com/wp-content/uploads/2014/02/24514-lastfm-logo-icon-vector-icon-vector-eps.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://kit.fontawesome.com/aa81db3404.js" crossorigin="anonymous"></script>
-</head>
+    <link
+      rel="shortcut icon"
+      href="https://logoeps.com/wp-content/uploads/2014/02/24514-lastfm-logo-icon-vector-icon-vector-eps.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/aa81db3404.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <div class="loader"><span class="loader__icon"></span></div>
     <div class="container" id="top">
-        <!--        HEADER START-->
-        <div class="header-wrapper">
-            <header class="header">
-                <a href="#" class="header__logo">
-                    warhol
-                </a>
-                <div class="header-facilities">
-                    <nav class="navbar">
-                        <a href="#" class="navbar-items navbar-items--active">
-                            demos
-                            <ul class="subnav">
-                                <li class="subnav-items">creative agency</li>
-                                <li class="subnav-items">ecommerce</li>
-                                <li class="subnav-items">small business</li>
-                                <li class="subnav-items">photography</li>
-                                <li class="subnav-items">corporate</li>
-                                <li class="subnav-items">showcase</li>
-                                <li class="subnav-items">personal</li>
-                                <li class="subnav-items">one page</li>
-                            </ul>
-                        </a>
-                        <a href="#" class="navbar-items">
-                            pages
-                            <ul class="subnav">
-                                <li class="subnav-items">about original</li>
-                                <li class="subnav-items">about style 2</li>
-                                <li class="subnav-items">about style 3</li>
-                                <li class="subnav-items">services original</li>
-                                <li class="subnav-items">services style 2</li>
-                                <li class="subnav-items">services style 3</li>
-                                <li class="subnav-items">contact original</li>
-                                <li class="subnav-items">contact styles 2</li>
-                                <li class="subnav-items">contact styles 3</li>
-                                <li class="subnav-items">FAQ</li>
-                                <li class="subnav-items">404</li>
-                                <li class="subnav-items">500</li>
-                                <li class="subnav-items">maintenance</li>
-                                <li class="subnav-items">search results</li>
-                            </ul>
-                        </a>
-                        <a href="#" class="navbar-items navbar-items--unset-pos">
-                            folio
-                            <div class="subnav--padding">
-                                <div class="subnav__col1">
-                                    <h4 class="subnav__heading">3 column grids</h4>
-                                    <ul>
-                                        <li class="subnav-items">3 column grid default</li>
-                                        <li class="subnav-items">3 column grid alt</li>
-                                        <li class="subnav-items">3 column grid fullwidth</li>
-                                        <li class="subnav-items">3 column grid full width with no margins</li>
-                                    </ul>
-                                </div>
-                                <div class="subnav__col2">
-                                    <h4 class="subnav__heading">4 column grids</h4>
-                                    <ul>
-                                        <li class="subnav-items">4 column grid with full alt</li>
-                                        <li class="subnav-items">4 column grid full width with no margins</li>
-                                        <li class="subnav-items">full width masonry grid</li>
-                                        <li class="subnav-items">full width masonry grid no margins</li>
-
-                                    </ul>
-                                </div>
-                                <div class="subnav__col3">
-                                    <h4 class="subnav__heading">project pages</h4>
-                                    <ul>
-                                        <li class="subnav-items">project style one</li>
-                                        <li class="subnav-items">project style two</li>
-                                        <li class="subnav-items">project style three</li>
-                                        <li class="subnav-items">project style four</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="navbar-items">
-                            blog
-                            <ul class="subnav">
-                                <li class="subnav-items">3 column grid</li>
-                                <li class="subnav-items">4 column full width grid</li>
-                                <li class="subnav-items">blog index sidebar right</li>
-                                <li class="subnav-items">blog index sidebar left</li>
-                                <li class="subnav-items">blog without sidebar</li>
-                                <li class="subnav-items">blog creative</li>
-                                <li class="subnav-items">contact styles 2</li>
-                                <li class="subnav-items">single post sidebar right</li>
-                                <li class="subnav-items">single post sidebar left</li>
-                            </ul>
-                        </a>
-                        <a href="#" class="navbar-items">
-                            shop
-                            <ul class="subnav">
-                                <li class="subnav-items">
-                                    shop layouts
-                                    <i class="subnav-items-icon fa-solid fa-chevron-right"></i>
-                                    <ul class="sub-subnav">
-                                        <li class="subnav-items">shop grid</li>
-                                        <li class="subnav-items">shop creative</li>
-                                        <li class="subnav-items">shop sidebar right</li>
-                                    </ul>
-                                </li>
-                                <li class="subnav-items">
-                                    single product
-                                    <i class="subnav-items-icon fa-solid fa-chevron-right"></i>
-                                    <ul class="sub-subnav">
-                                        <li class="subnav-items">product with gallery</li>
-                                        <li class="subnav-items">product with header</li>
-                                        <li class="subnav-items">product with parallax</li>
-                                        <li class="subnav-items">product on sale</li>
-                                        <li class="subnav-items">product out of stock</li>
-                                    </ul>
-                                </li>
-                                <li class="subnav-items">cart</li>
-                                <li class="subnav-items">checkout</li>
-                            </ul>
-                        </a>
-                        <a href="#" class="navbar-items navbar-items--unset-pos">
-                            elements
-                            <div class="subnav--padding subnav--center-position">
-                                <div class="subnav__col1">
-                                    <ul>
-                                        <li class="subnav-items"><i class="subnav-items-icon fa-solid fa-bars"></i>
-                                            accordions
-                                        </li>
-                                        <li class="subnav-items"><i class="subnav-items-icon fa-solid fa-gamepad"></i>
-                                            buttons
-                                        </li>
-                                        <li class="subnav-items"><i
-                                                class="subnav-items-icon fa-solid fa-file-video"></i>
-                                            feature columns
-                                        </li>
-                                        <li class="subnav-items"><i
-                                                class="subnav-items-icon fa-solid fa-shoe-prints"></i>
-                                            footers
-                                        </li>
-                                        <li class="subnav-items"><i class="subnav-items-icon fa-solid fa-at"></i> forms
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="subnav__col2">
-                                    <ul>
-                                        <li class="subnav-items"><i class="subnav-items-icon fa-solid fa-images"></i>
-                                            lightbox
-                                        </li>
-                                        <li class="subnav-items"><i class="subnav-items-icon fa-solid fa-map"></i> maps
-                                        </li>
-                                        <li class="subnav-items"><i
-                                                class="subnav-items-icon fa-solid fa-dollar-sign"></i>
-                                            pricing tables
-                                        </li>
-                                        <li class="subnav-items"><i
-                                                class="subnav-items-icon fa-solid fa-battery-quarter"></i> progress bars
-                                        </li>
-                                        <li class="subnav-items"><i
-                                                class="subnav-items-icon fa-solid fa-arrow-pointer"></i>
-                                            rollovers
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="subnav__col3">
-                                    <ul>
-                                        <li class="subnav-items"><i
-                                                class="subnav-items-icon fa-solid fa-envelope-open-text"></i> subscribe
-                                            forms
-                                        </li>
-                                        <li class="subnav-items"><i
-                                                class="subnav-items-icon fa-solid fa-compact-disc"></i>
-                                            slider
-                                        </li>
-                                        <li class="subnav-items"><i class="subnav-items-icon fa-solid fa-indent"></i>
-                                            tabs
-                                        </li>
-                                        <li class="subnav-items"><i
-                                                class="subnav-items-icon fa-solid fa-quote-right"></i>
-                                            testimonials
-                                        </li>
-                                        <li class="subnav-items"><i class="subnav-items-icon fa-solid fa-film"></i>
-                                            video
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
-                    </nav>
-                    <div class="cart">
-                        <i class="cart-icon fa-solid fa-cart-shopping"></i>
-                        <div class="cart-detail">
-                            <ul class="cart-list">
-                                <li class="cart-items">
-                                    <div class="cart-content">
-                                        <img src="./assets/images/cart/cart-thumb-small.jpg" alt="cart items"
-                                            class="cart-img">
-                                        <div class="cart-items__info">
-                                            <h4 class="cart-items__name">cotton jump suits</h4>
-                                            <div class="cart-items__quantity">
-                                                <span class="cart-items__number">2</span>
-                                                <span class="cart-items__times">x</span>
-                                                <span class="cart-items__price">$15.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <span class="cart-items__delete">&times;</span>
-                                </li>
-                                <li class="cart-items">
-                                    <div class="cart-content">
-                                        <img src="./assets/images/cart/cart-thumb-small-2.jpg" alt="cart items"
-                                            class="cart-img">
-                                        <div class="cart-items__info">
-                                            <h4 class="cart-items__name">crew neck U.S sweater</h4>
-                                            <div class="cart-items__quantity">
-                                                <span class="cart-items__number">2</span>
-                                                <span class="cart-items__times">x</span>
-                                                <span class="cart-items__price">$45.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <span class="cart-items__delete">&times;</span>
-                                </li>
-                                <li class="cart-items">
-                                    <div class="cart-content">
-                                        <img src="./assets/images/cart/cart-thumb-small-3.jpg" alt="cart items"
-                                            class="cart-img">
-                                        <div class="cart-items__info">
-                                            <h4 class="cart-items__name">cross summer top</h4>
-                                            <div class="cart-items__quantity">
-                                                <span class="cart-items__number">2</span>
-                                                <span class="cart-items__times">x</span>
-                                                <span class="cart-items__price">$17.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <span class="cart-items__delete">&times;</span>
-                                </li>
-                            </ul>
-                            <div class="cart-total">
-                                <span class="cart-total__words">sub total</span>
-                                <span class="cart-total__price">$77.00</span>
-                            </div>
-
-                            <div class="cart-footer">
-                                <a href="#" class="cart-footer__view-cart">view cart</a>
-                                <button class="btn cart-footer__btn">
-                                    <i class="cart-footer__icon fa-solid fa-check"></i>
-                                    <span class="cart-footer__btn-words">Checkout</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <label class="search" id="searchBtn" for="checkBox__search">
-                        <i class="search-icon fa-solid fa-magnifying-glass"></i>
-                    </label>
-
-                    <div class="mobile-menu">
-                        <i class="mobile-menu__icon fa-solid fa-bars"></i>
-                    </div>
+      <!--        HEADER START-->
+      <div class="header-wrapper">
+        <header class="header">
+          <a href="#" class="header__logo"> warhol </a>
+          <div class="header-facilities">
+            <nav class="navbar">
+              <a href="#" class="navbar-items navbar-items--active">
+                demos
+                <ul class="subnav">
+                  <li class="subnav-items">creative agency</li>
+                  <li class="subnav-items">ecommerce</li>
+                  <li class="subnav-items">small business</li>
+                  <li class="subnav-items">photography</li>
+                  <li class="subnav-items">corporate</li>
+                  <li class="subnav-items">showcase</li>
+                  <li class="subnav-items">personal</li>
+                  <li class="subnav-items">one page</li>
+                </ul>
+              </a>
+              <a href="#" class="navbar-items">
+                pages
+                <ul class="subnav">
+                  <li class="subnav-items">about original</li>
+                  <li class="subnav-items">about style 2</li>
+                  <li class="subnav-items">about style 3</li>
+                  <li class="subnav-items">services original</li>
+                  <li class="subnav-items">services style 2</li>
+                  <li class="subnav-items">services style 3</li>
+                  <li class="subnav-items">contact original</li>
+                  <li class="subnav-items">contact styles 2</li>
+                  <li class="subnav-items">contact styles 3</li>
+                  <li class="subnav-items">FAQ</li>
+                  <li class="subnav-items">404</li>
+                  <li class="subnav-items">500</li>
+                  <li class="subnav-items">maintenance</li>
+                  <li class="subnav-items">search results</li>
+                </ul>
+              </a>
+              <a href="#" class="navbar-items navbar-items--unset-pos">
+                folio
+                <div class="subnav--padding">
+                  <div class="subnav__col1">
+                    <h4 class="subnav__heading">3 column grids</h4>
+                    <ul>
+                      <li class="subnav-items">3 column grid default</li>
+                      <li class="subnav-items">3 column grid alt</li>
+                      <li class="subnav-items">3 column grid fullwidth</li>
+                      <li class="subnav-items">
+                        3 column grid full width with no margins
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="subnav__col2">
+                    <h4 class="subnav__heading">4 column grids</h4>
+                    <ul>
+                      <li class="subnav-items">4 column grid with full alt</li>
+                      <li class="subnav-items">
+                        4 column grid full width with no margins
+                      </li>
+                      <li class="subnav-items">full width masonry grid</li>
+                      <li class="subnav-items">
+                        full width masonry grid no margins
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="subnav__col3">
+                    <h4 class="subnav__heading">project pages</h4>
+                    <ul>
+                      <li class="subnav-items">project style one</li>
+                      <li class="subnav-items">project style two</li>
+                      <li class="subnav-items">project style three</li>
+                      <li class="subnav-items">project style four</li>
+                    </ul>
+                  </div>
                 </div>
-            </header>
-        </div>
-        <!-- MOBILE NAVBAR -->
-        <div class="navbar--mobile">
-            <div class="navbar__overlay--mobile"></div>
-            <div class="navbar__list-outzone--mobile"></div> 
-            <nav class="navbar__list--mobile">
-                <li class="navbar__items--mobile">
-                    <a href="#" class="navbar__items-links--mobile">demos</a>
-                </li>
-                <li class="navbar__items--mobile">
-                    <a href="#" class="navbar__items-links--mobile">pages</a>
-                </li>
-                <li class="navbar__items--mobile">
-                    <a href="#" class="navbar__items-links--mobile">folio</a>
-                </li>
-                <li class="navbar__items--mobile">
-                    <a href="#" class="navbar__items-links--mobile">blog</a>
-                </li>
-                <li class="navbar__items--mobile">
-                    <a href="#" class="navbar__items-links--mobile">shop</a>
-                </li>
-                <li class="navbar__items--mobile">
-                    <a href="#" class="navbar__items-links--mobile">elements</a>
-                </li>
-                <li class="navbar__items--mobile">
-                    <a href="#" class="navbar__items-links--mobile">your cart</a>
-                </li>
-                <div class="navbar__close-btn--mobile">&times;</div>
+              </a>
+              <a href="#" class="navbar-items">
+                blog
+                <ul class="subnav">
+                  <li class="subnav-items">3 column grid</li>
+                  <li class="subnav-items">4 column full width grid</li>
+                  <li class="subnav-items">blog index sidebar right</li>
+                  <li class="subnav-items">blog index sidebar left</li>
+                  <li class="subnav-items">blog without sidebar</li>
+                  <li class="subnav-items">blog creative</li>
+                  <li class="subnav-items">contact styles 2</li>
+                  <li class="subnav-items">single post sidebar right</li>
+                  <li class="subnav-items">single post sidebar left</li>
+                </ul>
+              </a>
+              <a href="#" class="navbar-items">
+                shop
+                <ul class="subnav">
+                  <li class="subnav-items">
+                    shop layouts
+                    <i class="subnav-items-icon fa-solid fa-chevron-right"></i>
+                    <ul class="sub-subnav">
+                      <li class="subnav-items">shop grid</li>
+                      <li class="subnav-items">shop creative</li>
+                      <li class="subnav-items">shop sidebar right</li>
+                    </ul>
+                  </li>
+                  <li class="subnav-items">
+                    single product
+                    <i class="subnav-items-icon fa-solid fa-chevron-right"></i>
+                    <ul class="sub-subnav">
+                      <li class="subnav-items">product with gallery</li>
+                      <li class="subnav-items">product with header</li>
+                      <li class="subnav-items">product with parallax</li>
+                      <li class="subnav-items">product on sale</li>
+                      <li class="subnav-items">product out of stock</li>
+                    </ul>
+                  </li>
+                  <li class="subnav-items">cart</li>
+                  <li class="subnav-items">checkout</li>
+                </ul>
+              </a>
+              <a href="#" class="navbar-items navbar-items--unset-pos">
+                elements
+                <div class="subnav--padding subnav--center-position">
+                  <div class="subnav__col1">
+                    <ul>
+                      <li class="subnav-items">
+                        <i class="subnav-items-icon fa-solid fa-bars"></i>
+                        accordions
+                      </li>
+                      <li class="subnav-items">
+                        <i class="subnav-items-icon fa-solid fa-gamepad"></i>
+                        buttons
+                      </li>
+                      <li class="subnav-items">
+                        <i class="subnav-items-icon fa-solid fa-file-video"></i>
+                        feature columns
+                      </li>
+                      <li class="subnav-items">
+                        <i
+                          class="subnav-items-icon fa-solid fa-shoe-prints"
+                        ></i>
+                        footers
+                      </li>
+                      <li class="subnav-items">
+                        <i class="subnav-items-icon fa-solid fa-at"></i> forms
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="subnav__col2">
+                    <ul>
+                      <li class="subnav-items">
+                        <i class="subnav-items-icon fa-solid fa-images"></i>
+                        lightbox
+                      </li>
+                      <li class="subnav-items">
+                        <i class="subnav-items-icon fa-solid fa-map"></i> maps
+                      </li>
+                      <li class="subnav-items">
+                        <i
+                          class="subnav-items-icon fa-solid fa-dollar-sign"
+                        ></i>
+                        pricing tables
+                      </li>
+                      <li class="subnav-items">
+                        <i
+                          class="subnav-items-icon fa-solid fa-battery-quarter"
+                        ></i>
+                        progress bars
+                      </li>
+                      <li class="subnav-items">
+                        <i
+                          class="subnav-items-icon fa-solid fa-arrow-pointer"
+                        ></i>
+                        rollovers
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="subnav__col3">
+                    <ul>
+                      <li class="subnav-items">
+                        <i
+                          class="subnav-items-icon fa-solid fa-envelope-open-text"
+                        ></i>
+                        subscribe forms
+                      </li>
+                      <li class="subnav-items">
+                        <i
+                          class="subnav-items-icon fa-solid fa-compact-disc"
+                        ></i>
+                        slider
+                      </li>
+                      <li class="subnav-items">
+                        <i class="subnav-items-icon fa-solid fa-indent"></i>
+                        tabs
+                      </li>
+                      <li class="subnav-items">
+                        <i
+                          class="subnav-items-icon fa-solid fa-quote-right"
+                        ></i>
+                        testimonials
+                      </li>
+                      <li class="subnav-items">
+                        <i class="subnav-items-icon fa-solid fa-film"></i>
+                        video
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
             </nav>
-        </div>
-        <!-- MOBILE NAVBAR END -->
-        <!--        HEADER END-->
-        <!--        CONTENT START-->
-        <div class="content">
-            <!--            SLIDER START-->
-            <div class="slider">
-                <img src="./assets/images/generic/hero-screens.jpg" alt="description background" class="desc__img">
-                <div class="desc">
-                    <h1 class="desc__heading">
-                        wharhol
-                    </h1>
-                    <p class="desc__words">Create a Stunning Website That Defines You!</p>
-                    <button class="btn btn--transparent btn--opa0">Discover Warhol</button>
+            <div class="cart">
+              <i class="cart-icon fa-solid fa-cart-shopping"></i>
+              <div class="cart-detail">
+                <ul class="cart-list">
+                  <li class="cart-items">
+                    <div class="cart-content">
+                      <img
+                        src="./assets/images/cart/cart-thumb-small.jpg"
+                        alt="cart items"
+                        class="cart-img"
+                      />
+                      <div class="cart-items__info">
+                        <h4 class="cart-items__name">cotton jump suits</h4>
+                        <div class="cart-items__quantity">
+                          <span class="cart-items__number">2</span>
+                          <span class="cart-items__times">x</span>
+                          <span class="cart-items__price">$15.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="cart-items__delete">&times;</span>
+                  </li>
+                  <li class="cart-items">
+                    <div class="cart-content">
+                      <img
+                        src="./assets/images/cart/cart-thumb-small-2.jpg"
+                        alt="cart items"
+                        class="cart-img"
+                      />
+                      <div class="cart-items__info">
+                        <h4 class="cart-items__name">crew neck U.S sweater</h4>
+                        <div class="cart-items__quantity">
+                          <span class="cart-items__number">2</span>
+                          <span class="cart-items__times">x</span>
+                          <span class="cart-items__price">$45.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="cart-items__delete">&times;</span>
+                  </li>
+                  <li class="cart-items">
+                    <div class="cart-content">
+                      <img
+                        src="./assets/images/cart/cart-thumb-small-3.jpg"
+                        alt="cart items"
+                        class="cart-img"
+                      />
+                      <div class="cart-items__info">
+                        <h4 class="cart-items__name">cross summer top</h4>
+                        <div class="cart-items__quantity">
+                          <span class="cart-items__number">2</span>
+                          <span class="cart-items__times">x</span>
+                          <span class="cart-items__price">$17.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="cart-items__delete">&times;</span>
+                  </li>
+                </ul>
+                <div class="cart-total">
+                  <span class="cart-total__words">sub total</span>
+                  <span class="cart-total__price">$77.00</span>
                 </div>
+
+                <div class="cart-footer">
+                  <a href="#" class="cart-footer__view-cart">view cart</a>
+                  <button class="btn cart-footer__btn">
+                    <i class="cart-footer__icon fa-solid fa-check"></i>
+                    <span class="cart-footer__btn-words">Checkout</span>
+                  </button>
+                </div>
+              </div>
             </div>
-            <!--            SLIDER END-->
-            <!--        BODY START-->
-            <div class="body">
-                <!--            FEATURES START-->
-                <div class="feature-section  white"  id="feature1">
-                    <div class="feature-content" data-aos="fade-up">
-                        <h2 class="feature-content__heading">
-                            Refined
-                            <span class="feature-content__font">&</span>
-                            Professional
-                        </h2>
-                        <h3 class="feature-content__summary">Build truly stunning layouts quickly by mixing pre-designed
-                            content
-                            blocks from different layouts. Simple!</h3>
-                        <p class="feature-content__description">There are many multi-purpose templates; there are very
-                            few
-                            that
-                            have a strong emphasis on design. Warhol comes with a multitude of carfully designed page
-                            layouts,
-                            e-commerce layouts and purpose built content blocks that when pieced together create
-                            stunning,
-                            professional layouts. The possibilities are endless.</p>
-                        <button class="btn btn--white">View Layouts</button>
-                    </div>
-                    <div class="feature-content__wrapper" data-aos="fade-left">
-                        <img src="./assets/images/generic/feature-templates.jpg" alt="feature image"
-                            class="feature-img">
-                    </div>
-                </div>
-                <div class="feature-section  black" id="feature2">
-                    <div class="feature-content__wrapper" data-aos="fade-right">
-                        <img src="./assets/images/generic/feature-navigation.jpg" alt="feature image"
-                            class="feature-img">
-                    </div>
-                    <div class="feature-content" data-aos="fade-up">
-                        <h2 class="feature-content__heading">
-                            Beautiful Navigation
-                        </h2>
-                        <h3 class="feature-content__summary">Warhol offers several navgiation types that are functional
-                            yet
-                            beautiful.</h3>
-                        <p class="feature-content__description">With multiple navigation types and a variety of ways to
-                            style
-                            headers, main menus, and auxiliary navigation, you can create a totally unique experience
-                            for
-                            your
-                            users.</p>
-                        <button class="btn btn--black">See Example</button>
-                    </div>
-                </div>
-                <div class="feature-section  white" id="feature3">
-                    <div class="feature-content" data-aos="fade-up"> 
-                        <h2 class="feature-content__heading">Elegant Font Pairing</h2>
-                        <h3 class="feature-content__summary">Elegant Font Pairing
-                            Professional design requires a careful attention to detail and typography.</h3>
-                        <p class="feature-content__description">We know the importance of typography in layouts and have
-                            therefore carefully chosen a font pair that not only looks professional, but that presents
-                            your
-                            information in a sleek, modern fashion.</p>
-                        <button class="btn btn--white">See Example</button>
-                    </div>
-                    <div class="feature-content__wrapper" data-aos="fade-left">
-                        <img src="./assets/images/generic/feature-typo.jpg" alt="feature image" class="feature-img">
-                    </div>
-                </div>
-                <div class="feature-section  black" id="feature4">
-                    <div class="feature-content__wrapper" data-aos="fade-right">
-                        <img src="./assets/images/generic/feature-form-integration.jpg" alt="feature image"
-                            class="feature-img">
-                    </div>
-                    <div class="feature-content" data-aos="fade-up">
-                        <h2 class="feature-content__heading">
-                            Contact Forms <span class="feature-content__font">&</span> Newsletter Integration
-                        </h2>
-                        <h3 class="feature-content__summary">Warhol comes with fully functional AJAX driven contact
-                            forms
-                            and
-                            newsletter forms.</h3>
-                        <p class="feature-content__description">Create contact forms on the fly by simply
-                            adding/removing
-                            fields
-                            and select boxes that you require, without editing any JS or PHP code. Our Newsletter signup
-                            forms
-                            integrate seamlessly with MailChimp; all you need is your email, API key and list ID.</p>
-                        <button class="btn btn--black">View Contact Pages</button>
-                    </div>
-                </div>
-                <!--            FEATURES END-->
-                <!--    HERO SECTION START-->
-                <div class="hero-section">
-                    <div class="hero__heading">Homepage Layouts</div>
-                    <div class="hero__grid">
-                        <div class="hero-items">
-                            <img src="./assets/images/portfolio/agency.jpg" alt="layouts img" class="hero-items__img">
-                            <div class="hero-items__overlay">
-                                <span class="hero-items__description">creative agency</span>
-                            </div>
-                        </div>
-                        <div class="hero-items">
-                            <img src="./assets/images/portfolio/ecommerce.jpg" alt="layouts img"
-                                class="hero-items__img">
-                            <div class="hero-items__overlay">
-                                <span class="hero-items__description">ecommerce</span>
-                            </div>
-                        </div>
-                        <div class="hero-items">
-                            <img src="./assets/images/portfolio/small-business.jpg" alt="layouts img"
-                                class="hero-items__img">
-                            <div class="hero-items__overlay">
-                                <span class="hero-items__description">small business</span>
-                            </div>
-                        </div>
-                        <div class="hero-items">
-                            <img src="./assets/images/portfolio/photography.jpg" alt="layouts img"
-                                class="hero-items__img">
-                            <div class="hero-items__overlay">
-                                <span class="hero-items__description">photography</span>
-                            </div>
-                        </div>
-                        <div class="hero-items">
-                            <img src="./assets/images/portfolio/corporate.jpg" alt="layouts img"
-                                class="hero-items__img">
-                            <div class="hero-items__overlay">
-                                <span class="hero-items__description">corporate</span>
-                            </div>
-                        </div>
-                        <div class="hero-items">
-                            <img src="./assets/images/portfolio/showcase.jpg" alt="layouts img" class="hero-items__img">
-                            <div class="hero-items__overlay">
-                                <span class="hero-items__description">fullscreen showcase</span>
-                            </div>
-                        </div>
-                        <div class="hero-items">
-                            <img src="./assets/images/portfolio/personal.jpg" alt="layouts img" class="hero-items__img">
-                            <div class="hero-items__overlay">
-                                <span class="hero-items__description">personal folio</span>
-                            </div>
-                        </div>
-                        <div class="hero-items">
-                            <img src="./assets/images/portfolio/one-page.jpg" alt="layouts img" class="hero-items__img">
-                            <div class="hero-items__overlay">
-                                <span class="hero-items__description">one page</span>
-                            </div>
-                        </div>
-                        <div class="hero-items">
-                            <img src="./assets/images/portfolio/coming-soon.jpg" alt="layouts img"
-                                class="hero-items__img">
-                        </div>
-                    </div>
-                </div>
-                <!--            HERO SECTION END-->
-                <!--    DISCOVER SECTION START-->
-                <div class="discover-section">
-                    <h2 class="discover-section__heading">build a stunning website</h2>
-                    <h3 class="discover-section__summary">Warhol is a complete design toolkit that gives you the tools
-                        you
-                        need
-                        to
-                        create a unique and professional looking website for you or your client.</h3>
-                    <div class="discover-section__grid">
-                        <div class="discover-items">
-                            <i class="discover-items__icon fa-solid fa-map"></i>
-                            <div class="discover-items__info">
-                                <h3 class="discover-items__name">8 Homepages</h3>
-                                <p class="discover-items__description">Warhol comes with 8 different homepages and 8
-                                    unique
-                                    hero
-                                    sections that can easily be dropped into any section of any page.</p>
-                            </div>
-                        </div>
-                        <div class="discover-items">
-                            <i class="discover-items__icon fa-solid fa-table-cells"></i>
-                            <div class="discover-items__info">
-                                <h3 class="discover-items__name">20+ Components</h3>
-                                <p class="discover-items__description">Make any design stand out by using a combination
-                                    of
-                                    the
-                                    20+
-                                    components that come with Warhol. Accordions, tabs, buttons and much more.</p>
-                            </div>
-                        </div>
-                        <div class="discover-items">
-                            <i class="discover-items__icon fa-solid fa-plug"></i>
-                            <div class="discover-items__info">
-                                <h3 class="discover-items__name">8+ Plugins</h3>
-                                <p class="discover-items__description">As with all our templates, Warhol comes with 8
-                                    premium
-                                    in-house developed plugins, which means that when there's an update, you'll get it.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="discover-items">
-                            <i class="discover-items__icon fa-solid fa-cubes"></i>
-                            <div class="discover-items__info">
-                                <h3 class="discover-items__name">Block Based</h3>
-                                <p class="discover-items__description">Warhol, like all our templates, is built using a
-                                    block
-                                    based,
-                                    responsive framework that makes designing easier. Move blocks around and get a new
-                                    design.</p>
-                            </div>
-                        </div>
-                        <div class="discover-items">
-                            <i class="discover-items__icon fa-solid fa-dollar-sign"></i>
-                            <div class="discover-items__info">
-                                <h3 class="discover-items__name">Ultimate Startup Pack</h3>
-                                <p class="discover-items__description">Warhol is a great starting point for startups
-                                    that
-                                    need a
-                                    quick and simple solution when it comes to creating a site. Save both time & money.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="discover-items">
-                            <i class="discover-items__icon fa-solid fa-infinity"></i>
-                            <div class="discover-items__info">
-                                <h3 class="discover-items__name">Infinite Possibilities</h3>
-                                <p class="discover-items__description">With a range of pre-design content blocks,
-                                    components
-                                    and
-                                    plugins, Sarte provides you with an unlimited number of possibilities.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="btn btn--blue btn--center">Purchase Warhol Now</button>
-                </div>
-                <!--    DISCOVER SECTION END-->
-                <!--        FOOTER START-->
-                <footer class="footer-section">
-                    <div class="footer-content">
-                        <div class="footer-content__items">
-                            <h4 class="footer-content__heading">about</h4>
-                            <p class="footer-content__words">There are many multi-purpose templates; there are very few
-                                that
-                                have a strong emphasis on design. Warhol comes with a multitude of carfully designed
-                                page
-                                layouts and purpose built content blocks that when pieced together create stunning,
-                                professional
-                                layouts. The possibilities are endless. Warhol is simple, elegent and powerful!</p>
-                        </div>
-                        <div class="footer-content__items">
-                            <h4 class="footer-content__heading">warhol news</h4>
-                            <div class="footer-content__links">
-                                <div class="footer-content__links-items">
-                                    <p class="footer-content__links-items-name">Our New Los Angeles Office</p>
-                                    <p class="footer-content__links-items-time">27 JUL 2014</p>
-                                </div>
-                                <div class="footer-content__links-items">
-                                    <p class="footer-content__links-items-name">Tutorial - Hidden Gems of Sublime</p>
-                                    <p class="footer-content__links-items-time">02 JUN 2014</p>
-                                </div>
-                                <div class="footer-content__links-items">
-                                    <p class="footer-content__links-items-name">Design Rules - Getting Back to Basics
-                                    </p>
-                                    <p class="footer-content__links-items-time">15 MAY 2014</p>
-                                </div>
-                                <div class="footer-content__links-items">
-                                    <p class="footer-content__links-items-name">New Team Member - Jason Adams</p>
-                                    <p class="footer-content__links-items-time">15 MAY 2014</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer-content__items">
-                            <h4 class="footer-content__heading">the archives</h4>
-                            <div class="footer-content__links">
-                                <p class="footer-content__links-items">February 2016</p>
-                                <p class="footer-content__links-items">December 2015</p>
-                                <p class="footer-content__links-items">November 2014</p>
-                                <p class="footer-content__links-items">April 2014</p>
-                                <p class="footer-content__links-items">February 2014</p>
-                                <p class="footer-content__links-items">January 2014</p>
-                            </div>
-                        </div>
-                        <div class="footer-content__items">
-                            <h4 class="footer-content__heading">never miss updates</h4>
-                            <div class="footer-content__links">
-                                <p class="footer-content__words">Want to be notified when we launch a new template or an
-                                    udpate.
-                                    Just sign up and we'll send you a notification by email.
-                                </p>
-                                <input type="email" class="footer-content__email" placeholder="Email address">
-                                <button class="btn footer-content__btn">Signup</button>
-                                <p class="footer-content__warning">No spamming here.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-contact">
-                        <div class="footer-contact__left">
-                            <span class="footer-contact__left-words">© ThemeMountain. All Rights Reserved. </span>
-                            <span class="footer-contact__links"> Terms & Conditions </span>
-                            |
-                            <span class="footer-contact__links">Cookies policy</span>
-                        </div>
-                        <div class="footer-contact__right">
-                            <i class="footer-contact__icons fa-brands fa-twitter-square"></i>
-                            <i class="footer-contact__icons fa-brands fa-facebook-square"></i>
-                            <i class="footer-contact__icons fa-brands fa-youtube-square"></i>
-                            <i class="footer-contact__icons fa-brands fa-vimeo-square"></i>
-                            <i class="footer-contact__icons fa-brands fa-instagram-square"></i>
-                        </div>
-                    </div>
-                </footer>
-                <!--        FOOTER END-->
+            <label class="search" id="searchBtn" for="checkBox__search">
+              <i class="search-icon fa-solid fa-magnifying-glass"></i>
+            </label>
+
+            <div class="mobile-menu">
+              <i class="mobile-menu__icon fa-solid fa-bars"></i>
             </div>
-            <!--        BODY END-->
+          </div>
+        </header>
+      </div>
+      <!-- MOBILE NAVBAR -->
+      <div class="navbar--mobile">
+        <div class="navbar__overlay--mobile"></div>
+        <div class="navbar__list-outzone--mobile"></div>
+        <nav class="navbar__list--mobile">
+          <li class="navbar__items--mobile">
+            <a href="#" class="navbar__items-links--mobile">demos</a>
+          </li>
+          <li class="navbar__items--mobile">
+            <a href="#" class="navbar__items-links--mobile">pages</a>
+          </li>
+          <li class="navbar__items--mobile">
+            <a href="#" class="navbar__items-links--mobile">folio</a>
+          </li>
+          <li class="navbar__items--mobile">
+            <a href="#" class="navbar__items-links--mobile">blog</a>
+          </li>
+          <li class="navbar__items--mobile">
+            <a href="#" class="navbar__items-links--mobile">shop</a>
+          </li>
+          <li class="navbar__items--mobile">
+            <a href="#" class="navbar__items-links--mobile">elements</a>
+          </li>
+          <li class="navbar__items--mobile">
+            <a href="#" class="navbar__items-links--mobile">your cart</a>
+          </li>
+          <div class="navbar__close-btn--mobile">&times;</div>
+        </nav>
+      </div>
+      <!-- MOBILE NAVBAR END -->
+      <!--        HEADER END-->
+      <!--        CONTENT START-->
+      <div class="content">
+        <!--            SLIDER START-->
+        <div class="slider">
+          <img
+            src="./assets/images/generic/hero-screens.jpg"
+            alt="description background"
+            class="desc__img"
+          />
+          <div class="desc">
+            <h1 class="desc__heading">wharhol</h1>
+            <p class="desc__words">
+              Create a Stunning Website That Defines You!
+            </p>
+            <button class="btn btn--transparent btn--opa0">
+              Discover Warhol
+            </button>
+          </div>
         </div>
-        <!--        CONTENT END-->
-        <!-- SEARCH SECTION -->
-        <div class="search-section">
-            <div class="search-section__outsideZone"></div>
-            <div class="search-input-wrapper">
-                <input type="text" class="search-section__input " placeholder="TYPE & HIT ENTER...">
-                <p class="search-section__close">
-                    close
+        <!--            SLIDER END-->
+        <!--        BODY START-->
+        <div class="body">
+          <!--            FEATURES START-->
+          <div class="feature-section white" id="feature1">
+            <div class="feature-content" data-aos="fade-up">
+              <h2 class="feature-content__heading">
+                Refined
+                <span class="feature-content__font">&</span>
+                Professional
+              </h2>
+              <h3 class="feature-content__summary">
+                Build truly stunning layouts quickly by mixing pre-designed
+                content blocks from different layouts. Simple!
+              </h3>
+              <p class="feature-content__description">
+                There are many multi-purpose templates; there are very few that
+                have a strong emphasis on design. Warhol comes with a multitude
+                of carfully designed page layouts, e-commerce layouts and
+                purpose built content blocks that when pieced together create
+                stunning, professional layouts. The possibilities are endless.
+              </p>
+              <button class="btn btn--white">View Layouts</button>
+            </div>
+            <div class="feature-content__wrapper" data-aos="fade-left">
+              <img
+                src="./assets/images/generic/feature-templates.jpg"
+                alt="feature image"
+                class="feature-img"
+              />
+            </div>
+          </div>
+          <div class="feature-section black" id="feature2">
+            <div class="feature-content__wrapper" data-aos="fade-right">
+              <img
+                src="./assets/images/generic/feature-navigation.jpg"
+                alt="feature image"
+                class="feature-img"
+              />
+            </div>
+            <div class="feature-content" data-aos="fade-up">
+              <h2 class="feature-content__heading">Beautiful Navigation</h2>
+              <h3 class="feature-content__summary">
+                Warhol offers several navgiation types that are functional yet
+                beautiful.
+              </h3>
+              <p class="feature-content__description">
+                With multiple navigation types and a variety of ways to style
+                headers, main menus, and auxiliary navigation, you can create a
+                totally unique experience for your users.
+              </p>
+              <button class="btn btn--black">See Example</button>
+            </div>
+          </div>
+          <div class="feature-section white" id="feature3">
+            <div class="feature-content" data-aos="fade-up">
+              <h2 class="feature-content__heading">Elegant Font Pairing</h2>
+              <h3 class="feature-content__summary">
+                Elegant Font Pairing Professional design requires a careful
+                attention to detail and typography.
+              </h3>
+              <p class="feature-content__description">
+                We know the importance of typography in layouts and have
+                therefore carefully chosen a font pair that not only looks
+                professional, but that presents your information in a sleek,
+                modern fashion.
+              </p>
+              <button class="btn btn--white">See Example</button>
+            </div>
+            <div class="feature-content__wrapper" data-aos="fade-left">
+              <img
+                src="./assets/images/generic/feature-typo.jpg"
+                alt="feature image"
+                class="feature-img"
+              />
+            </div>
+          </div>
+          <div class="feature-section black" id="feature4">
+            <div class="feature-content__wrapper" data-aos="fade-right">
+              <img
+                src="./assets/images/generic/feature-form-integration.jpg"
+                alt="feature image"
+                class="feature-img"
+              />
+            </div>
+            <div class="feature-content" data-aos="fade-up">
+              <h2 class="feature-content__heading">
+                Contact Forms
+                <span class="feature-content__font">&</span> Newsletter
+                Integration
+              </h2>
+              <h3 class="feature-content__summary">
+                Warhol comes with fully functional AJAX driven contact forms and
+                newsletter forms.
+              </h3>
+              <p class="feature-content__description">
+                Create contact forms on the fly by simply adding/removing fields
+                and select boxes that you require, without editing any JS or PHP
+                code. Our Newsletter signup forms integrate seamlessly with
+                MailChimp; all you need is your email, API key and list ID.
+              </p>
+              <button class="btn btn--black">View Contact Pages</button>
+            </div>
+          </div>
+          <!--            FEATURES END-->
+          <!--    HERO SECTION START-->
+          <div class="hero-section">
+            <div class="hero__heading">Homepage Layouts</div>
+            <div class="hero__grid">
+              <div class="hero-items">
+                <img
+                  src="./assets/images/portfolio/agency.jpg"
+                  alt="layouts img"
+                  class="hero-items__img"
+                />
+                <div class="hero-items__overlay">
+                  <span class="hero-items__description">creative agency</span>
+                </div>
+              </div>
+              <div class="hero-items">
+                <img
+                  src="./assets/images/portfolio/ecommerce.jpg"
+                  alt="layouts img"
+                  class="hero-items__img"
+                />
+                <div class="hero-items__overlay">
+                  <span class="hero-items__description">ecommerce</span>
+                </div>
+              </div>
+              <div class="hero-items">
+                <img
+                  src="./assets/images/portfolio/small-business.jpg"
+                  alt="layouts img"
+                  class="hero-items__img"
+                />
+                <div class="hero-items__overlay">
+                  <span class="hero-items__description">small business</span>
+                </div>
+              </div>
+              <div class="hero-items">
+                <img
+                  src="./assets/images/portfolio/photography.jpg"
+                  alt="layouts img"
+                  class="hero-items__img"
+                />
+                <div class="hero-items__overlay">
+                  <span class="hero-items__description">photography</span>
+                </div>
+              </div>
+              <div class="hero-items">
+                <img
+                  src="./assets/images/portfolio/corporate.jpg"
+                  alt="layouts img"
+                  class="hero-items__img"
+                />
+                <div class="hero-items__overlay">
+                  <span class="hero-items__description">corporate</span>
+                </div>
+              </div>
+              <div class="hero-items">
+                <img
+                  src="./assets/images/portfolio/showcase.jpg"
+                  alt="layouts img"
+                  class="hero-items__img"
+                />
+                <div class="hero-items__overlay">
+                  <span class="hero-items__description"
+                    >fullscreen showcase</span
+                  >
+                </div>
+              </div>
+              <div class="hero-items">
+                <img
+                  src="./assets/images/portfolio/personal.jpg"
+                  alt="layouts img"
+                  class="hero-items__img"
+                />
+                <div class="hero-items__overlay">
+                  <span class="hero-items__description">personal folio</span>
+                </div>
+              </div>
+              <div class="hero-items">
+                <img
+                  src="./assets/images/portfolio/one-page.jpg"
+                  alt="layouts img"
+                  class="hero-items__img"
+                />
+                <div class="hero-items__overlay">
+                  <span class="hero-items__description">one page</span>
+                </div>
+              </div>
+              <div class="hero-items">
+                <img
+                  src="./assets/images/portfolio/coming-soon.jpg"
+                  alt="layouts img"
+                  class="hero-items__img"
+                />
+              </div>
+            </div>
+          </div>
+          <!--            HERO SECTION END-->
+          <!--    DISCOVER SECTION START-->
+          <div class="discover-section">
+            <h2 class="discover-section__heading">build a stunning website</h2>
+            <h3 class="discover-section__summary">
+              Warhol is a complete design toolkit that gives you the tools you
+              need to create a unique and professional looking website for you
+              or your client.
+            </h3>
+            <div class="discover-section__grid">
+              <div class="discover-items">
+                <i class="discover-items__icon fa-solid fa-map"></i>
+                <div class="discover-items__info">
+                  <h3 class="discover-items__name">8 Homepages</h3>
+                  <p class="discover-items__description">
+                    Warhol comes with 8 different homepages and 8 unique hero
+                    sections that can easily be dropped into any section of any
+                    page.
+                  </p>
+                </div>
+              </div>
+              <div class="discover-items">
+                <i class="discover-items__icon fa-solid fa-table-cells"></i>
+                <div class="discover-items__info">
+                  <h3 class="discover-items__name">20+ Components</h3>
+                  <p class="discover-items__description">
+                    Make any design stand out by using a combination of the 20+
+                    components that come with Warhol. Accordions, tabs, buttons
+                    and much more.
+                  </p>
+                </div>
+              </div>
+              <div class="discover-items">
+                <i class="discover-items__icon fa-solid fa-plug"></i>
+                <div class="discover-items__info">
+                  <h3 class="discover-items__name">8+ Plugins</h3>
+                  <p class="discover-items__description">
+                    As with all our templates, Warhol comes with 8 premium
+                    in-house developed plugins, which means that when there's an
+                    update, you'll get it.
+                  </p>
+                </div>
+              </div>
+              <div class="discover-items">
+                <i class="discover-items__icon fa-solid fa-cubes"></i>
+                <div class="discover-items__info">
+                  <h3 class="discover-items__name">Block Based</h3>
+                  <p class="discover-items__description">
+                    Warhol, like all our templates, is built using a block
+                    based, responsive framework that makes designing easier.
+                    Move blocks around and get a new design.
+                  </p>
+                </div>
+              </div>
+              <div class="discover-items">
+                <i class="discover-items__icon fa-solid fa-dollar-sign"></i>
+                <div class="discover-items__info">
+                  <h3 class="discover-items__name">Ultimate Startup Pack</h3>
+                  <p class="discover-items__description">
+                    Warhol is a great starting point for startups that need a
+                    quick and simple solution when it comes to creating a site.
+                    Save both time & money.
+                  </p>
+                </div>
+              </div>
+              <div class="discover-items">
+                <i class="discover-items__icon fa-solid fa-infinity"></i>
+                <div class="discover-items__info">
+                  <h3 class="discover-items__name">Infinite Possibilities</h3>
+                  <p class="discover-items__description">
+                    With a range of pre-design content blocks, components and
+                    plugins, Sarte provides you with an unlimited number of
+                    possibilities.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn--blue btn--center">
+              Purchase Warhol Now
+            </button>
+          </div>
+          <!--    DISCOVER SECTION END-->
+          <!--        FOOTER START-->
+          <footer class="footer-section" id="footer-mobile-section">
+            <div class="footer-content">
+              <div class="footer-content__items">
+                <h4 class="footer-content__heading">about</h4>
+                <p class="footer-content__words">
+                  There are many multi-purpose templates; there are very few
+                  that have a strong emphasis on design. Warhol comes with a
+                  multitude of carfully designed page layouts and purpose built
+                  content blocks that when pieced together create stunning,
+                  professional layouts. The possibilities are endless. Warhol is
+                  simple, elegent and powerful!
                 </p>
+              </div>
+              <div class="footer-content__items">
+                <h4 class="footer-content__heading">warhol news</h4>
+                <div class="footer-content__links">
+                  <div class="footer-content__links-items">
+                    <p class="footer-content__links-items-name">
+                      Our New Los Angeles Office
+                    </p>
+                    <p class="footer-content__links-items-time">27 JUL 2014</p>
+                  </div>
+                  <div class="footer-content__links-items">
+                    <p class="footer-content__links-items-name">
+                      Tutorial - Hidden Gems of Sublime
+                    </p>
+                    <p class="footer-content__links-items-time">02 JUN 2014</p>
+                  </div>
+                  <div class="footer-content__links-items">
+                    <p class="footer-content__links-items-name">
+                      Design Rules - Getting Back to Basics
+                    </p>
+                    <p class="footer-content__links-items-time">15 MAY 2014</p>
+                  </div>
+                  <div class="footer-content__links-items">
+                    <p class="footer-content__links-items-name">
+                      New Team Member - Jason Adams
+                    </p>
+                    <p class="footer-content__links-items-time">15 MAY 2014</p>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-content__items">
+                <h4 class="footer-content__heading">the archives</h4>
+                <div class="footer-content__links">
+                  <p class="footer-content__links-items">February 2016</p>
+                  <p class="footer-content__links-items">December 2015</p>
+                  <p class="footer-content__links-items">November 2014</p>
+                  <p class="footer-content__links-items">April 2014</p>
+                  <p class="footer-content__links-items">February 2014</p>
+                  <p class="footer-content__links-items">January 2014</p>
+                </div>
+              </div>
+              <div class="footer-content__items">
+                <h4 class="footer-content__heading">never miss updates</h4>
+                <div class="footer-content__links">
+                  <p class="footer-content__words">
+                    Want to be notified when we launch a new template or an
+                    udpate. Just sign up and we'll send you a notification by
+                    email.
+                  </p>
+                  <input
+                    type="email"
+                    class="footer-content__email"
+                    placeholder="Email address"
+                  />
+                  <button class="btn footer-content__btn">Signup</button>
+                  <p class="footer-content__warning">No spamming here.</p>
+                </div>
+              </div>
             </div>
-            <div class="search-section__outsideZone"></div>
+            <div class="footer-contact">
+              <div class="footer-contact__left">
+                <span class="footer-contact__left-words"
+                  >© ThemeMountain. All Rights Reserved.
+                </span>
+                <span class="footer-contact__links"> Terms & Conditions </span>
+                |
+                <span class="footer-contact__links">Cookies policy</span>
+              </div>
+              <div class="footer-contact__right">
+                <i
+                  class="footer-contact__icons fa-brands fa-twitter-square"
+                ></i>
+                <i
+                  class="footer-contact__icons fa-brands fa-facebook-square"
+                ></i>
+                <i
+                  class="footer-contact__icons fa-brands fa-youtube-square"
+                ></i>
+                <i class="footer-contact__icons fa-brands fa-vimeo-square"></i>
+                <i
+                  class="footer-contact__icons fa-brands fa-instagram-square"
+                ></i>
+              </div>
+            </div>
+          </footer>
+          <!--        FOOTER END-->
+          <div class="body--gap"></div>
         </div>
-        <!-- SEARCH SECTION END-->
-        <!-- SCROLL TO TOP BUTTON -->
-        <a href="#top" class="goToTop-section">
-            <i class="goToTop-icon fa-solid fa-angle-up"></i>
-        </a>
-        <!-- SCROLL TO TOP BUTTON END -->
+        <!--        BODY END-->
+      </div>
+      <!--        CONTENT END-->
+      <!-- SEARCH SECTION -->
+      <div class="search-section">
+        <div class="search-section__outsideZone"></div>
+        <div class="search-input-wrapper">
+          <input
+            type="text"
+            class="search-section__input"
+            placeholder="TYPE & HIT ENTER..."
+          />
+          <p class="search-section__close">close</p>
+        </div>
+        <div class="search-section__outsideZone"></div>
+      </div>
+      <!-- SEARCH SECTION END-->
+      <!-- SCROLL TO TOP BUTTON -->
+      <a href="#top" class="goToTop-section">
+        <i class="goToTop-icon fa-solid fa-angle-up"></i>
+      </a>
+      <!-- SCROLL TO TOP BUTTON END -->
     </div>
     <script defer src="./assets/js/index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
-
+  </body>
 </html>

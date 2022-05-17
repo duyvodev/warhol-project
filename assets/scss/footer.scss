@@ -1,5 +1,8 @@
 /*Footer*/
 .footer-section {
+  bottom: 0;
+  position: fixed;
+  z-index: -2;
   background-color: #232323;
   padding: 85px 0;
 }
@@ -148,6 +151,10 @@
 }
 
 @media (max-width: 1080px) {
+  .footer-section{
+    position: unset;
+  }
+
   .footer-content {
     margin: 0 80px;
     grid-template-columns: repeat(2, 1fr);
@@ -155,6 +162,10 @@
 
   .footer-contact {
     margin: 32px 80px 0;
+  }
+
+  .body--gap{
+    height: 0;
   }
 }
 

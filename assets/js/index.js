@@ -1,6 +1,4 @@
 const slider = document.querySelector(".slider")
-// const content = document.querySelector(".content")
-// const footer = document.querySelector(".footer-section")
 const header = document.querySelector(".header-wrapper")
 const searchBtn = document.getElementById("searchBtn")
 const searchSection = document.querySelector(".search-section")
@@ -15,8 +13,9 @@ const menuMobileList = document.querySelector(".navbar__list--mobile")
 const menuMobileOutZone = document.querySelector(".navbar__list-outzone--mobile")
 const menuMobileClose = document.querySelector(".navbar__close-btn--mobile")
 const loader = document.querySelector(".loader")
+const footer = document.querySelector(".footer-section")
+const bodyGap = document.querySelector(".body--gap")
 
-//
 // window.onwheel = e => {
 //     if(e.deltaY >= 0){
 //         // Scrolling Down with mouse
@@ -131,8 +130,20 @@ window.onkeydown = e => {
 
 }
 
+// OVERFLOW SCROLLBAR WHEN LOADING PAGE
+document.getElementsByTagName("body")[0].style.height = 100 + "vh"
+document.getElementsByTagName("body")[0].style.width = 100 + "vw"
+document.getElementsByTagName("body")[0].style.overflow = "hidden"
+setTimeout(() => {
+    document.getElementsByTagName("body")[0].removeAttribute("style")
+    
+},3000)
+
 // Display loader in 3s
 window.onload = () => {
+    
+
+
     setTimeout(() => {
         loader.classList.add("loader--fadeOut")
     } ,2500)
@@ -155,3 +166,38 @@ const observerSlider = new IntersectionObserver(entries => {
 })
 
 observerSlider.observe(slider)
+
+
+// DISPLAY FOOTER THROUGH A GAP IN BODY
+if(document.documentElement.scrollWidth <= 1080){
+    bodyGap.style.height = 0 + "px"
+}
+else{
+    let footerHeight = footer.clientHeight
+    bodyGap.style.height = footerHeight + "px"
+}
+// RESPONSIVE FOOTER 
+window.onresize = () => {
+    // if screen width <= 1080px => FOOTER POSITION: UNSET
+    if(document.documentElement.scrollWidth <= 1080){
+        bodyGap.style.height = 0 + "px"
+    }
+    // if screen width > 1080px => FOOTER POSITION: FIXED
+    else{
+        let footerHeight = footer.clientHeight
+        bodyGap.style.height = footerHeight + "px"
+    }
+}
+
+window.onscroll = () => {
+    if(pageYOffset < document.documentElement.scrollHeight/2){
+        // UPPER BODY
+        slider.style.zIndex = -1
+        footer.style.zIndex = -2
+    }
+    else{
+        // LOWER BODY
+        slider.style.zIndex = -2
+        footer.style.zIndex = -1
+    }
+}
