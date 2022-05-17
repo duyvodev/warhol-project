@@ -1,3 +1,6 @@
+:root{
+--navbar-mobile-width: 50%;
+}
 /*HEADER*/
 .header--hide {
   transform: translateY(-100%);
@@ -424,6 +427,14 @@
   opacity: 1;
 }
 
+.navbar__list-outzone--mobile{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - var(--navbar-mobile-width));
+}
+
 .navbar--mobile {
   display: block;
   position: fixed;
@@ -445,7 +456,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  width: 400px;
+  width: var(--navbar-mobile-width);
   padding-top: 43px;
   background: #1e1b1b;
   transition: all .3s ease-in-out;

@@ -6,11 +6,13 @@ const searchBtn = document.getElementById("searchBtn")
 const searchSection = document.querySelector(".search-section")
 const searchCloseBtn = document.querySelector(".search-section__close")
 const searchInput = document.querySelector(".search-section__input")
+const searchOutZone = document.querySelectorAll(".search-section__outsideZone")
 const goToTopBtn = document.querySelector(".goToTop-section")
 const menuMobile = document.querySelector(".navbar--mobile")
 const menuMobileBtn = document.querySelector(".mobile-menu")
 const menuMobileOverlay = document.querySelector(".navbar__overlay--mobile")
 const menuMobileList = document.querySelector(".navbar__list--mobile")
+const menuMobileOutZone = document.querySelector(".navbar__list-outzone--mobile")
 const menuMobileClose = document.querySelector(".navbar__close-btn--mobile")
 const loader = document.querySelector(".loader")
 
@@ -18,11 +20,8 @@ const loader = document.querySelector(".loader")
 // window.onwheel = e => {
 //     if(e.deltaY >= 0){
 //         // Scrolling Down with mouse
-//         slider.classList.add("down-layer")
 //     } else {
 //         // Scrolling Up with mouse
-//         slider.classList.remove("down-layer")
-//         footer.classList.add("down-layer")
 //     }
 // }
 
@@ -47,7 +46,8 @@ window.onwheel = e => {
 
     // If the screen on top
     if (window.pageYOffset === 0) {
-        // Hide go to top buttonon
+        // Hide go to top button
+        goToTopBtn.classList.add("goToTop--fadeAway")
         goToTopBtn.classList.add("goToTop--hide")
     }
 }
@@ -69,6 +69,18 @@ searchCloseBtn.onclick = () => {
     searchInput.value = ""
 }
 
+// Hide SEARCH SECTION if click outside the input box
+searchOutZone.forEach((item) => {
+    item.onclick = () => {
+        searchSection.classList.remove("search-section--display")
+        searchInput.value = ""
+    }
+})
+
+searchInput.onclick = () => {
+    searchSection.classList.add("search-section--display")
+}
+
 menuMobileBtn.onclick = () => {
     // Display NAVBAR MOBILE
     menuMobile.classList.add("navbar--mobile_popUp")
@@ -76,6 +88,7 @@ menuMobileBtn.onclick = () => {
     menuMobileList.classList.add("navbar__list--mobile--display")
 }
 
+// Hide NAVBAR MOBILE if click on CLOSE Button
 menuMobileClose.onclick = () => {
     menuMobileList.classList.remove("navbar__list--mobile--display")
     setTimeout(()=>{
@@ -84,6 +97,38 @@ menuMobileClose.onclick = () => {
     setTimeout(() => {
         menuMobile.classList.remove("navbar--mobile_popUp")
     }, 500);
+}
+
+// Hide NAVBAR MOBILE if click outside NAVBAR
+menuMobileOutZone.onclick = () => {
+    menuMobileList.classList.remove("navbar__list--mobile--display")
+    setTimeout(()=>{
+        menuMobileOverlay.classList.remove("navbar__overlay--mobile_display")
+    },300)
+    setTimeout(() => {
+        menuMobile.classList.remove("navbar--mobile_popUp")
+    }, 500);
+}
+
+// Hide NAVBAR MOBILE if press ESC
+window.onkeydown = e => {
+    if(e.key === "Escape"){
+        if(menuMobile.classList.contains("navbar--mobile_popUp")){
+            menuMobileList.classList.remove("navbar__list--mobile--display")
+            setTimeout(()=>{
+                menuMobileOverlay.classList.remove("navbar__overlay--mobile_display")
+            },300)
+            setTimeout(() => {
+                menuMobile.classList.remove("navbar--mobile_popUp")
+            }, 500);
+        }   
+
+        if(searchSection.classList.contains("search-section--display")){
+            searchSection.classList.remove("search-section--display")
+            searchInput.value = ""
+        }
+    }
+
 }
 
 // Display loader in 3s
