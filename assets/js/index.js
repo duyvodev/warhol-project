@@ -13,8 +13,6 @@ const menuMobileList = document.querySelector(".navbar__list--mobile")
 const menuMobileOutZone = document.querySelector(".navbar__list-outzone--mobile")
 const menuMobileClose = document.querySelector(".navbar__close-btn--mobile")
 const loader = document.querySelector(".loader")
-const footer = document.querySelector(".footer-section")
-const bodyGap = document.querySelector(".body--gap")
 
 // window.onwheel = e => {
 //     if(e.deltaY >= 0){
@@ -166,38 +164,3 @@ const observerSlider = new IntersectionObserver(entries => {
 })
 
 observerSlider.observe(slider)
-
-
-// DISPLAY FOOTER THROUGH A GAP IN BODY
-if(document.documentElement.scrollWidth <= 1080){
-    bodyGap.style.height = 0 + "px"
-}
-else{
-    let footerHeight = footer.clientHeight
-    bodyGap.style.height = footerHeight + "px"
-}
-// RESPONSIVE FOOTER 
-window.onresize = () => {
-    // if screen width <= 1080px => FOOTER POSITION: UNSET
-    if(document.documentElement.scrollWidth <= 1080){
-        bodyGap.style.height = 0 + "px"
-    }
-    // if screen width > 1080px => FOOTER POSITION: FIXED
-    else{
-        let footerHeight = footer.clientHeight
-        bodyGap.style.height = footerHeight + "px"
-    }
-}
-
-window.onscroll = () => {
-    if(pageYOffset < document.documentElement.scrollHeight/2){
-        // UPPER BODY
-        slider.style.zIndex = -1
-        footer.style.zIndex = -2
-    }
-    else{
-        // LOWER BODY
-        slider.style.zIndex = -2
-        footer.style.zIndex = -1
-    }
-}
