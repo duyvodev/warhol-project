@@ -96,6 +96,8 @@
   cursor: pointer;
   border-radius: 50%;
   text-decoration: none;
+  opacity: 0;
+  transition: ease 300ms;
 
   &:hover {
     background: #120d0d;
