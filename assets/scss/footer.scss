@@ -124,6 +124,8 @@
 }
 
 .footer-contact__right {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-contact__icons {
@@ -201,5 +203,9 @@
 
   .footer-contact {
     margin: 32px 80px 0;
+  }
+
+  .footer-contact__left{
+    text-align: center;
   }
 }
