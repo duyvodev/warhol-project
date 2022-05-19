@@ -21,6 +21,16 @@ const loader = document.querySelector(".loader")
 //         // Scrolling Up with mouse
 //     }
 // }
+window.addEventListener('scroll', () => {
+  const scroll = this.scrollY;
+  if (scroll !== 0) {
+    goToTopBtn.style.opacity = '1';
+    goToTopBtn.style.cursor = 'pointer';
+  } else {
+    goToTopBtn.style.opacity = '0';
+    goToTopBtn.style.cursor = 'auto';
+  }
+});
 
 // Catch Scroll up and down
 window.onwheel = e => {
@@ -31,7 +41,7 @@ window.onwheel = e => {
         header.classList.add("header--hide")
 
         // Hide Go to Top button
-        goToTopBtn.classList.remove("goToTop--hide")
+        // goToTopBtn.classList.remove("goToTop--hide")
     }
     else {
         // Scrolling Up with mouse
@@ -42,17 +52,15 @@ window.onwheel = e => {
     }
 
     // If the screen on top
-    if (window.pageYOffset === 0) {
-        // Hide go to top button
-        goToTopBtn.classList.add("goToTop--fadeAway")
-        goToTopBtn.classList.add("goToTop--hide")
-    }
+    // if (window.pageYOffset === 0) {
+    //     // Hide go to top button
+    //     goToTopBtn.classList.add("goToTop--fadeAway")
+    //     goToTopBtn.classList.add("goToTop--hide")
+    // }
 }
 
 goToTopBtn.onclick = () => {
-    // Display header and hide GoToTop button
-    header.classList.remove("header--hide")
-    goToTopBtn.classList.add("goToTop--hide")
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 searchBtn.onclick = () => {
