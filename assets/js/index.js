@@ -61,6 +61,7 @@ window.onwheel = e => {
 
 goToTopBtn.onclick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    header.classList.remove("header--hide")
 }
 
 searchBtn.onclick = () => {
